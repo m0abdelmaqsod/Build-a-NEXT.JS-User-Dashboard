@@ -1,0 +1,111 @@
+.ResentOrders {
+    background-color: #fff;
+    padding: 0 10px;
+    border-radius: 10px;
+    height: 70vh;
+    border: 1px solid #00000028;
+    overflow: scroll;
+}
+
+.ResentOrders::-webkit-scrollbar {
+    background-color: rgba(224, 234, 243, 0.658);
+    border-radius: 10px;
+    width: 10px;
+    height: 0px;
+}
+
+.ResentOrders::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(137, 43, 226, 0.733);
+}
+
+.ResentOrders h1 {
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.ResentOrders ul li {
+    background-color: rgba(224, 234, 243, 0.5);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.ResentOrders ul li .icon {
+    background-color: rgba(115, 0, 223, 0.103);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: blueviolet;
+}
+
+.ResentOrders ul li .priceOrName {
+    margin-left: 15px;
+}
+
+.ResentOrders ul li .price {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ResentOrders ul li .name {
+    color: #888;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.ResentOrders ul li .data {
+    position: absolute;
+    right: 10px;
+    font-size: 14px;
+    text-align: end;
+}
+
+
+
+
+
+
+
+
+@media (max-width:425px) {
+    .ResentOrders {
+        height: 100vh;
+    }
+
+    .ResentOrders h1 {
+        font-size: 14px;
+        margin: 15px 0;
+    }
+
+    .ResentOrders ul li {
+        padding: 15px 10px;
+    }
+
+
+    .ResentOrders ul li .icon {
+        padding: 8px 12px;
+    }
+
+    .ResentOrders ul li .priceOrName {
+        margin-left: 10px;
+    }
+
+    .ResentOrders ul li .price {
+        font-size: 13px;
+    }
+
+    .ResentOrders ul li .name {
+        font-size: 11px;
+    }
+
+    .ResentOrders ul li .data {
+        font-size: 11px;
+    }
+}

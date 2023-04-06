@@ -1,0 +1,187 @@
+.main {
+    background-color: rgba(224, 234, 243, 0.644);
+    margin-left: 6%;
+}
+
+.main .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header h2 {
+    font-size: 16px;
+}
+
+.main .schedule {
+    padding: 20px;
+}
+
+.main .schedule .customers {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.main .schedule .headSchedul {
+    padding: 15px 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    cursor: pointer;
+}
+
+
+
+.main ul li {
+    background-color: rgba(207, 223, 236, 0.199);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    position: relative;
+}
+
+.main ul li:hover {
+    background-color: rgba(207, 223, 236, 0.699);
+
+}
+
+.main ul li .bodySchedul {
+    display: flex;
+    align-items: center;
+}
+
+.main ul li .bodySchedul .icon {
+    background-color: rgba(115, 0, 223, 0.103);
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+    color: blueviolet;
+}
+
+.main ul li .priceOrName {
+    margin-left: 10px;
+}
+
+.main ul li .price {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.main ul li .name {
+    color: #888;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.main ul li .method {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main ul li .onHold span{
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main ul li .processing span{
+    background-color: #bbf7d0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main ul li .completed span{
+    background-color: #bfdbfe;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==== Responsiv ==== */
+@media (max-width:425px) {
+    .main {
+        margin-left: 0%;
+        padding-bottom: 20%;
+    }
+    
+    .main .schedule .headSchedul {
+        padding: 15px 5px 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main .schedule .headSchedul span:nth-child(3){
+        display: none;
+    }
+
+    .main ul li {
+        padding: 15px 5px;
+        font-size: 12px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main ul li .bodySchedul .icon {
+        padding: 5px 8px;
+        margin-right: 5px;
+        font-size: 12px;
+    }
+    
+    .main ul li .priceOrName {
+        margin-left: 0px;
+    }
+    
+    .main ul li .price {
+        font-size: 15px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    
+    .main ul li .name {
+        color: #888;
+        font-weight: 100;
+        font-size: 10px;
+        /* font-size: 14px; */
+    }
+    
+    .main ul li .data {
+        display: none;
+    }
+
+    .main ul li .method {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .main ul li .onHold span{
+        background-color: yellow;
+        padding: 8px;
+        border-radius: 10px;
+    }
+    
+    .main ul li .processing span{
+        background-color: #bbf7d0;
+        padding: 8px;
+        border-radius: 10px;
+    }
+    
+    .main ul li .completed span{
+        background-color: #bfdbfe;
+        padding: 8px;
+        border-radius: 10px;
+    }
+    
+    
+
+}

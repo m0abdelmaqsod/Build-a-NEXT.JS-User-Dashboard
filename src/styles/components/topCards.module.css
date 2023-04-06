@@ -1,0 +1,89 @@
+.statistics {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1%;
+}
+
+.statistics .statistic {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #00000028;
+
+}
+
+/* .statistics .statistic .info {
+} */
+
+.statistics .statistic .info .price {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.statistics .statistic .info .typeOfInfo {
+    color: #888;
+    font-size: 15px;
+}
+
+.statistics .statistic .rate {
+    background-color: #baf0cd;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:425px) {
+    
+
+.statistics {
+    padding: 10px 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5%;
+}
+
+.statistics .statistic {
+    padding: 10px;
+}
+
+.statistics .statistic .info .price {
+    font-size: 15px;
+}
+
+.statistics .statistic .info .typeOfInfo {
+    font-size: 12px;
+}
+
+.statistics .statistic .rate {
+    width: 45px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.statistics .statistic .rate p{
+font-size: 12px;
+}
+}

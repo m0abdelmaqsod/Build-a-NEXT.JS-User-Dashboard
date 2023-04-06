@@ -1,0 +1,28 @@
+.main {
+    background-color: rgba(224, 234, 243, 0.644);
+    margin-left: 6%;
+}
+
+.main .dataPanel {
+    display: grid;
+    grid-template-columns: 65% auto;
+    column-gap: 20px;
+    /* background-color: aqua; */
+    padding: 20px;
+}
+
+
+
+/* ===== Responsiv ==== */
+@media (max-width:425px) {
+    .main {
+        margin-left: 0;
+        padding-bottom: 20%;
+
+    }
+
+    .main .dataPanel {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+}
